@@ -1,4 +1,5 @@
 import React from 'react';
+import Cosmetic from '../Cosmetic/Cosmetic';
 
 
 const Cosmetics = () => {
@@ -13,7 +14,7 @@ const cosmetics = [
         <div>
             <h2>Welcome to my cosmetic store!!</h2>
             {
-                cosmetics.map(cosmetic => console.log(cosmetic))
+                cosmetics.map(cosmetic => <Cosmetic key={cosmetic.id}></Cosmetic>)
             }
          
         </div>
